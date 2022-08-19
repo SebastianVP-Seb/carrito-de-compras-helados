@@ -1,0 +1,20 @@
+.top-menu {
+
+    background-color: hotpink;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .mr-auto {
+        display: flex;
+        background-color: aqua;
+        :not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    .brandNav {
+        background-color: black;
+        color: white;
+    }
+}

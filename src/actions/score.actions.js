@@ -1,6 +1,5 @@
 const { TYPES } = require("../types/typesReducer");
 
-
 export const isCorrectAnswer = (answerCorrect) => dispatch => {
   if (answerCorrect) {
     dispatch(addCorrectAnswers())

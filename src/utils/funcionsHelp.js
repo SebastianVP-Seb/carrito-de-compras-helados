@@ -12,11 +12,10 @@ export const calculateIVA = ( mount ) => {
   return (mount * TAX);
 }
 
-
 export const getUser = ( id, username )=>{
   return ({ id, username })
 }
 
-export const invertedPhase = (phase) => {
-  return phase.split("").reverse().join("")
+export const invertedPhrase = (phrase) => {
+  return phrase.split("").reverse().join("")
 }

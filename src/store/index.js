@@ -3,7 +3,8 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 import { rootReducers } from './rootReducer';
 
-const configureStore = () => {
+//el initialState se pasa para hacer los tests con el store
+export const configureStore = (initialState) => {
 
   const isDevelopment = process.env.ENVIROMENT === 'development';
 
@@ -12,7 +13,7 @@ const configureStore = () => {
   const enhacers = [ middlewareEnhacer ];
 
   const composeEnchancers = isDevelopment ? composeWithDevTools(...enhacers) : compose(...enhacers);
-  return createStore(rootReducers, composeEnchancers);
+  return createStore(rootReducers, initialState, composeEnchancers);
 }
 
 const store = configureStore();

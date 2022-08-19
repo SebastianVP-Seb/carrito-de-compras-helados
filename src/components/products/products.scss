@@ -1,0 +1,13 @@
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0% auto;
+    background-color: antiquewhite;
+    gap: 1rem;
+}
+
+html {
+    margin: 0%;
+    padding: 0%;
+    border: 0;
+}

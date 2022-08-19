@@ -1,6 +1,5 @@
 import { TYPES } from "../types/typesReducer";
 
-
 export const saveAnswer = (questionId, isCorrect, answerSelect, responseTime, point) => {
   return ( dispatch ) => {
     dispatch(addAnswer(questionId, isCorrect, answerSelect, responseTime, point));
